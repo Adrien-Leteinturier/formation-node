@@ -1,0 +1,21 @@
+                    Publication
++-------------+   order.created   +------------------+
+| API Express | ----------------> | orders.exchange  |
++-------------+                   |     (direct)     |
+                                  +------------------+
+                                           |
+                                           | binding :
+                                           | order.created
+                                           v
+                                +----------------------+
+                                | orders.processing    |
+                                +----------------------+
+                                           |
+                                           | consume
+                                           v
+                                +----------------------+
+                                | Worker Commandes     |
+                                | - Stock              |
+                                | - Paiement           |
+                                | - Facture            |
+                                +----------------------+
