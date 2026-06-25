@@ -1,0 +1,16 @@
+{
+  "name": "04-share_work",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node service.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
